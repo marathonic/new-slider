@@ -59,7 +59,7 @@
 
 
     //Uncomment line below to automate
-    // let automateSlides = setInterval(nextSlide, 3600);
+    let automateSlides = setInterval(nextSlide, 3600);
 
     //PUSH THIS LOCAL REPO TO GITHUB ASAP!
 
