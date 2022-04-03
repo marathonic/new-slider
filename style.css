@@ -1,0 +1,95 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --var-smooth-sand: #dbdbdb;
+    --var-sandy-beige: #fff0dd;
+    --tasty-cocoa: #41403f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 200px 1fr 200px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--tasty-cocoa);
+}
+
+.smaller-container {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: var(--var-smooth-sand);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    display: none;
+    min-width: max-content;
+    min-height: max-content;
+}
+
+.card.view {
+    display: block;
+}
+
+img {
+    max-width: 660px;
+    max-height: 371px;
+}
+
+.slide-buttons {
+    width: 182px;
+    height: 165px;
+    text-align: center;
+}
+
+#slider-left {
+
+}
+
+#slider-right {
+}
+
+
+
+
+/* ARRRRR!!! */
+
+nav.dotty:hover {
+    cursor: default;
+  }
+  
+  /* Hide the radio button */
+  nav.dotty input[type=radio] {
+    display: none;
+  }
+  
+  /* All styling takes place on the label element */
+  nav.dotty label {
+    display: inline-block;
+    background: #ddd;
+    overflow: hidden;
+    text-indent: -999px;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    box-shadow: inset 0 1px 1px 0 #999;
+  }
+  nav.dotty label:hover {
+    background: #bbb;
+    cursor: pointer;
+    box-shadow: inset 0 1px 1px 0 #777;
+  }
+  nav.dotty input:checked + label {
+    background: linear-gradient(#00CFFF, #1584bc);
+    box-shadow: inset 0 0 1px 1px #087DC0;
+  }
